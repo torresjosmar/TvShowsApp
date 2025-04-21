@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_show_navigation"
+    app:startDestination="@id/homeViewFragment">
+
+    <fragment
+        android:id="@+id/homeViewFragment"
+        android:name="com.example.tvshowsapp.feature.home.view.HomeViewFragment"
+        android:label="HomeViewFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeViewFragment_to_tvShowDetailViewFragment"
+            app:destination="@id/tvShowDetailViewFragment"
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/tvShowDetailViewFragment"
+        android:name="com.example.tvshowsapp.feature.home.view.TvShowDetailViewFragment"
+        android:label="TvShowDetailViewFragment"
+        tools:layout="@layout/fragment_tv_show_detail">
+        <argument
+            android:name="data"
+            app:argType="com.example.tvshowsapp.feature.home.datasource.model.TvShowResponse" />
+    </fragment>
+
+
+</navigation>
