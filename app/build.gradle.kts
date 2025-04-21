@@ -52,7 +52,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -61,26 +60,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    // al final migrar al catalogo de dependencias
-    implementation("io.insert-koin:koin-android:4.0.4")
-
-
-    //---- Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.8.9")
-    implementation("androidx.navigation:navigation-ui-ktx:2.8.9")
-
-    //---- Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
-    implementation("com.squareup.retrofit2:adapter-rxjava2:2.11.0")
-
-    //---- Material Desing
-    implementation("com.google.android.material:material:1.12.0")
-
-    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
-
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-
+    implementation(libs.koin.android)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.converter.scalars)
+    implementation(libs.adapter.rxjava2)
+    implementation(libs.material)
+    implementation(libs.logging.interceptor)
+    implementation(libs.glide)
 }
