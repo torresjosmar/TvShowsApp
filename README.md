@@ -31,4 +31,4 @@ An Android application that lets users explore TV series using a public API. It 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/your_repository.git
+[git clone https://github.com/your_username/your_repository.git](https://github.com/torresjosmar/TvShowsApp.git)
